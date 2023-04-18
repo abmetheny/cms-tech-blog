@@ -1,0 +1,20 @@
+[
+  {
+    "body": "This was very helpful!",
+    "date_created": "5/10/2020",
+    "user_id": 1,
+    "post_id": 1
+  },
+  {
+    "body": "I didn't know this, thanks!",
+    "date_created": "5/10/2020",
+    "user_id": 3,
+    "post_id": 2
+  },
+  {
+    "body": "Who knew?",
+    "date_created": "5/10/2020",
+    "user_id": 3,
+    "post_id": 2
+  }
+]
