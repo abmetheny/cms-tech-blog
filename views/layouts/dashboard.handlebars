@@ -21,7 +21,7 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/">Home</a>
         <a class="nav-link" href="/dashboard">Dashboard</a>
-        <a class="nav-link" href="#">Logout</a>
+        <a id="logout-link" class="nav-link" href="#">Logout</a>
       </div>
     </div>
   </div>
@@ -29,24 +29,14 @@
 
 
 
-<body>
-  <header class="hero">
-    <h1 class="app-title"><a href="/dashboard">Your Dashboard</a></h1>
-  </header>
+<body class="bg-secondary">
 
-
-<main>
-  <div class="card">
-    <div class="card-body">
-      {{{body}}}
-    </div>
-  </div>
+<main class="container-fluid">
+  <h1 class="card-title mt-3"><a href="/dashboard">Your Dashboard</a></h1>
+  <a class="btn btn-dark my-2" href="/dashboard/new">➕ New Post</a>
+  {{{body}}}
 </main>
 
-
-  <footer class="footer flex-row justify-center">
-    <a href="/dashboard/new">➕ New Post</a>
-  </footer>
 </body>
 
 </html>
