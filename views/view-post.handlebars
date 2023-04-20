@@ -31,15 +31,15 @@
   {{/if}}
 
 <form id="new-comment-form" class="card">
-  <div class="card-header">
+  <div class="card-header text-bg-warning">
       <h4>Add New Comment</h4>
     </div>
-  <div class="mb-3 card-body">
+  <div class="card-body border border-warning">
     <input type="hidden" name="post-id" value="{{post.id}}" />
 {{#if loggedIn}}
     <textarea name="comment-body" class="form-control" placeholder="Add your comment here..."></textarea>
+  <button type="submit" class="btn btn-dark mt-2">Submit</button>
   </div>
-  <button type="submit" class="btn btn-dark mb-2">Submit</button>
 {{else}}
 <p>Please <a class="text-primary fw-bold" href="/login">log in</a> to leave a comment.</p>
 {{/if}}

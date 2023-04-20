@@ -24,6 +24,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 <img src="./public/images/Screenshot1.png">
 <img src="./public/images/Screenshot2.png">
 <img src="./public/images/Screenshot3.png">
+<img src="./public/images/Screenshot4.png">
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
