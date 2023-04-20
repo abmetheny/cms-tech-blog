@@ -1,5 +1,6 @@
 const postId = document.querySelector('input[name="post-id"]').value;
 
+// Allows for editing a post from the form on the dashboard-edit-post handlebars page
 const editFormHandler = async function(event) {
   event.preventDefault();
 
@@ -20,6 +21,7 @@ const editFormHandler = async function(event) {
   document.location.replace('/dashboard');
 };
 
+// Allows for deleting a post from the form on the dashboard-edit-post handlebars page
 const deleteClickHandler = async function() {
   await fetch(`/api/post/${postId}`, {
     method: 'DELETE'

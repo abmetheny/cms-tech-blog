@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Post, Comment, User } = require('../models/');
 
-// get all posts for homepage
+// Render all posts for the homepage
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// get single post
+// Render a single post from the homepage
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -41,6 +41,7 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
+// Render the login page
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
@@ -50,6 +51,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// Render the signup page
 router.get('/signup', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');

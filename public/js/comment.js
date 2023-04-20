@@ -1,3 +1,4 @@
+// Creates a new comment from form on the view-post handlebars page
 const commentFormHandler = async function(event) {
   event.preventDefault();
 

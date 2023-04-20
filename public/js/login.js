@@ -1,3 +1,4 @@
+// Allows login from the login handlebars page
 const loginFormHandler = async function(event) {
   event.preventDefault();
 

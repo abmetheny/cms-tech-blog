@@ -1,3 +1,4 @@
+// Allows signup from the form on the signup handlebars page
 const signupFormHandler = async function(event) {
   event.preventDefault();
 

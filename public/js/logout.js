@@ -1,3 +1,4 @@
+// Allows logout from the logout link in the nav bar on the main/dashboard pages
 const logout = async function() {
   const response = await fetch('/api/user/logout', {
     method: 'POST',

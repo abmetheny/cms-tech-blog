@@ -1,3 +1,4 @@
+// Creates a new post from the form on the dashboard-create-post handlebars page
 const newFormHandler = async function(event) {
   event.preventDefault();
 

@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Post } = require('../models/');
 const withAuth = require('../utils/auth');
 
+// Render the dashboard home page with all posts written by the logged in user
 router.get('/', withAuth, async (req, res) => {
   try {
     const postData = await Post.findAll({
@@ -21,12 +22,14 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+// Render page to create a new post
 router.get('/new', withAuth, (req, res) => {
   res.render('dashboard-create-post', {
     layout: 'dashboard',
   });
 });
 
+// Render page to edit an existing post
 router.get('/edit/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);
