@@ -6,6 +6,9 @@ AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
+## Link to Deployed App
+[The Tech Blog](https://infinite-woodland-21056.herokuapp.com/)
+
 ## Site Functionality
 * All pages include nav bar with links to the home page, dashboard page, and login/signup page
   * If the visitor is already signed in, the nav bar will instead have a logout link option
