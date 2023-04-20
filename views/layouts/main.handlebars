@@ -9,24 +9,20 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+{{!-- Nav bar container --}}
+<nav class="navbar bg-dark navbar-expand-sm bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img src="./images/logo.png" alt="The Tech Blog" width="150" height="30">
+      <img src="/images/logo.png" alt="The Tech Blog" width="150" height="30">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/dashboard">Dashboard</a>
-        {{#if loggedIn}}
-        <a id="logout-link" class="nav-link" href="#">Logout</a>
-        {{else}}
-        <a class="nav-link" href="/login">Login</a>
-        {{/if}}
-      </div>
+    <div class="navbar-nav">
+      <a class="nav-link" aria-current="page" href="/">Home</a>
+      <a class="nav-link" href="/dashboard">Dashboard</a>
+      {{#if loggedIn}}
+      <a id="logout-link" class="nav-link" href="#">Logout</a>
+      {{else}}
+      <a class="nav-link" href="/login">Login</a>
+      {{/if}}
     </div>
   </div>
 </nav>
@@ -38,8 +34,8 @@
   {{{body}}}
 </main>
 
-  <footer class="flex-row justify-center">
-    &copy; The Tech Blog Folks
+  <footer class="badge bg-secondary mb-3">
+    &copy; The Coding Consortium
   </footer>
 </body>
 
